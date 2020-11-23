@@ -59,7 +59,6 @@ def simlin_plot(x, y, a, b):  # 30 point function definition
         counter += 1
 
     plt.figure()
-    print(result_set)
     plt.plot(x, result_set, color="red")
     plt.scatter(x, y, color="blue")
     plt.xlabel("Experience")
@@ -68,5 +67,7 @@ def simlin_plot(x, y, a, b):  # 30 point function definition
 
 
 results = simlin_coef(Experience, Salary)
+
+print(results[0], results[1])
 
 simlin_plot(Experience, Salary, results[0], results[1])
