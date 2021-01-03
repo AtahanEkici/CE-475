@@ -81,7 +81,7 @@ Matrix = np.column_stack((temp, Age))
 Matrix = np.column_stack((Matrix, Experience))
 Matrix = np.column_stack((Matrix, Power))
 
-print(Matrix)
+print(Matrix.shape, Salary.shape)
 
 B = question1(Matrix, Salary)
 print("\n")
